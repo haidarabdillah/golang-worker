@@ -1,0 +1,22 @@
+	blockNumber := helpers.getLastBlock()
+	fmt.Println(blockNumber)
+	// if(setting.Value < blockNumber){
+	// 	fmt.Println(setting.Value)
+	// 	blockCheck :=uint(setting.Value+1)
+	// 	// Print block information
+	// 	block, err := client.BlockByNumber(context.Background(), big.NewInt(int64(blockCheck)))
+	// 	if err != nil {
+	// 		log.Fatal(err)
+	// 	}
+	// 	fmt.Printf("Block number: %d\n", blockCheck)
+	// 	// Print list of transaction hashes
+	// 	for _, tx := range block.Transactions() {
+	// 		fmt.Println(tx.Hash().Hex())
+	// 		weiValue := big.NewInt(tx.Value())
+	// 		ethValue := new(big.Float).Quo(new(big.Float).SetInt(weiValue), big.NewFloat(1e18))
+	// 		fmt.Println(ethValue.Text('f', 18))
+
+
+	// 		fmt.Println(tx.To().Hex())
+	// 	}
+	// }
